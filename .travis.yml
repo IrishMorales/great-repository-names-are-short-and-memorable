@@ -9,4 +9,4 @@ notifications:
         on_failure: never
 
 script:
-    - "curl -i#fq https://api.github.com/repos/atom/atom/releases/latest"
+    - "curl --verbose -i https://api.github.com/repos/atom/atom/releases/latest"

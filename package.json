@@ -1,15 +1,14 @@
 {
 	"name": "SUCK-MY-RAGING-HARD-CAPS",
 	"version": "v1.0.0",
+	"main": "./lib/index.js",
+	"atomTestRunner": "atom-mocha",
 	"devDependencies": {
-		"@alhadis/eslint-config": "^1.0.0",
-		"eslint": "^5.6.1"
-	},
-	"scripts": {
-		"lint": "npx eslint .",
-		"test": "npx ./run-tests.js"
+		"@alhadis/eslint-config": "^1.2.0",
+		"eslint": "^5.16.0",
+		"atom-mocha": "^2.2.0"
 	},
 	"eslintConfig": {
-		"extends": "@alhadis"
+		"extends": "@alhadis/eslint-config/atom"
 	}
 }

@@ -1,1 +1,1 @@
-![](give-me-your-liver.png)
+<div align="center"><a href="https://travis-ci.org/Alhadis/great-repository-names-were-short-and-memorable"><img alt="Built status: TravisCI" src="https://travis-ci.org/Alhadis/great-repository-names-were-short-and-memorable.svg?branch=dev" width="600" /></a><p></p><img src="give-me-your-liver.png" /></div>

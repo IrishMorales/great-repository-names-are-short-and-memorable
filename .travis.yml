@@ -1,9 +1,5 @@
-branches:
-    only:
-        - master
-        - dev
 git:
-    depth: 1
+    depth: 10
 
 language: objective-c
 

@@ -3,7 +3,7 @@ branches:
         - master
         - dev
 git:
-    depth: 10
+    depth: 1
 
 language: objective-c
 
@@ -12,4 +12,7 @@ notifications:
         on_success: never
         on_failure: never
 
-script: "DISPLAY=xterm curl -s https://raw.githubusercontent.com/Alhadis/.files/master/bin/rainbow | sh"
+script:
+    - 'printf "\$DISPLAY: %s\n" $DISPLAY'
+    - "curl -s https://raw.githubusercontent.com/Alhadis/.files/master/bin/rainbow | DISPLAY=xterm sh | tee"
+    - "curl -s https://raw.githubusercontent.com/Alhadis/.files/master/bin/rainbow | DISPLAY=''    sh | tee"

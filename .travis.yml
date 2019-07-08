@@ -3,13 +3,25 @@ git:
 
 language: cpp
 
-os:
-    - linux
-    - osx
+matrix:
+    include:
+        - os:   linux
+          dist: trusty
+          env:  ATOM_CHANNEL=stable
 
-env:
-    - ATOM_CHANNEL=stable
-    - ATOM_CHANNEL=beta
+        - os:   linux
+          dist: xenial
+          env:  ATOM_CHANNEL=stable
+
+        - os:   linux
+          dist: xenial
+          env:  ATOM_CHANNEL=beta
+
+        - os:   osx
+          env:  ATOM_CHANNEL=stable
+
+        - os:   osx
+          env:  ATOM_CHANNEL=beta
 
 notifications:
     email:
@@ -17,5 +29,4 @@ notifications:
         on_failure: never
 
 script:
-    - "dpkg-deb --version || true"
     - "curl -s https://raw.githubusercontent.com/Alhadis/Atom-CI/master/dist/main.sh | sh"

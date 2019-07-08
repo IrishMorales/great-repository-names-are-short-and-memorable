@@ -16,4 +16,6 @@ notifications:
         on_success: never
         on_failure: never
 
-script: "curl -s https://raw.githubusercontent.com/Alhadis/Atom-CI/master/dist/main.sh | sh"
+script:
+    - "printf '\e[32mTest\e[0m\n'"
+    - "curl -s https://raw.githubusercontent.com/Alhadis/Atom-CI/master/dist/main.sh | sh"

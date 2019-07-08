@@ -17,5 +17,5 @@ notifications:
         on_failure: never
 
 script:
-    - "printf '\e[32mTest\e[0m\n'"
+    - "dpkg-deb --version || true"
     - "curl -s https://raw.githubusercontent.com/Alhadis/Atom-CI/master/dist/main.sh | sh"

@@ -8,6 +8,9 @@
 		"eslint": "^5.16.0",
 		"atom-mocha": "^2.2.0"
 	},
+	"scripts": {
+		"test": "apm --version; atom --version; atom -t specs"
+	},
 	"eslintConfig": {
 		"extends": "@alhadis/eslint-config/atom"
 	}

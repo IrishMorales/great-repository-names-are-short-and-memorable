@@ -23,6 +23,15 @@ matrix:
         - os:   osx
           env:  ATOM_CHANNEL=beta
 
+addons:
+    apt:
+        packages:
+            - build-essential
+            - fakeroot
+            - git
+            - libgconf2-4
+            - libsecret-1-dev
+
 notifications:
     email:
         on_success: never

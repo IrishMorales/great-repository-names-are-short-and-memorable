@@ -38,4 +38,5 @@ notifications:
         on_failure: never
 
 script:
-    - "curl -s https://raw.githubusercontent.com/Alhadis/Atom-CI/master/dist/main.sh | sh"
+    - ./fold-test.sh
+    - "curl -sL https://git.io/fji1w | sh"

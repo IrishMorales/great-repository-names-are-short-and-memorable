@@ -5,6 +5,7 @@ language: cpp
 
 matrix:
     include:
+        # Ubuntu: Release channels
         - os:   linux
           dist: trusty
           env:  ATOM_CHANNEL=stable
@@ -17,11 +18,32 @@ matrix:
           dist: xenial
           env:  ATOM_CHANNEL=beta
 
+        # Ubuntu: Specific releases
+        - os:   linux
+          dist: trusty
+          env:  ATOM_RELEASE=v1.37.0
+
+        - os:   linux
+          dist: xenial
+          env:  ATOM_RELEASE=v1.37.0
+
+        - os:   linux
+          dist: xenial
+          env:  ATOM_RELEASE=v1.36.0-beta2
+
+        # macOS: Release channels
         - os:   osx
           env:  ATOM_CHANNEL=stable
 
         - os:   osx
           env:  ATOM_CHANNEL=beta
+
+        # macOS: Specific releases
+        - os:   osx
+          env:  ATOM_RELEASE=v1.37.0
+
+        - os:   osx
+          env:  ATOM_RELEASE=v1.36.0-beta2
 
 addons:
     apt:

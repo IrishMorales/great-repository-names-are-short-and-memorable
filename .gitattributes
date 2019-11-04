@@ -1,2 +1,5 @@
 *.glyphs linguist-language=OpenStep-Property-List
 *.shite  linguist-language=pYtHoN
+*.json   linguist-language=json_with_comments
+*.cough  linguist-language=LiterateCoffee-Script
+*.tsv    linguist-language=Y-A_M-L

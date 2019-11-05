@@ -6,6 +6,7 @@
 # Corporation and others. All Rights Reserved.
 ## see NOTE below.
 ## Also see: http://icu-project.org/copyright-scan.html
+
 #
 # git stuff
 # .git is ignored by code.

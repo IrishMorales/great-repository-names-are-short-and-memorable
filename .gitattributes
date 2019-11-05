@@ -1,0 +1,9 @@
+*.glyphs linguist-language=OpenStep-Property-List
+*.shite  linguist-language=pYtHoN
+*._      linguist-language=json_with_comments
+*.json   linguist-language=jsonwithcomments
+*.cough  linguist-language=LiterateCoffee-Script
+*.tsv    linguist-language=Y-A_M-L
+
+.cpyskip.txt linguist-language=Ignore-List
+

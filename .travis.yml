@@ -9,6 +9,5 @@ notifications:
         on_failure: never
 
 script:
-    - node --version
-    - nvm install 12.0
-    - node --version
+    - export RAMSAY='salt and peppah'
+    - for gordon in $RAMSAY; do printf '<%s>\n' $gordon; done

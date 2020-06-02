@@ -9,5 +9,5 @@ notifications:
         on_failure: never
 
 script:
-    - export RAMSAY='salt and peppah'
-    - for gordon in $RAMSAY; do printf '<%s>\n' $gordon; done
+    - echo 111; env; echo 111
+    - ./whoo.sh

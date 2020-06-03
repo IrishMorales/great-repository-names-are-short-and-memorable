@@ -1,13 +1,15 @@
 git:
     depth: 10
 
-language: objective-c
+language: minimal
+
+os: osx
 
 notifications:
     email:
         on_success: never
         on_failure: never
 
-script:
-    - echo 111; env; echo 111
-    - ./whoo.sh
+script: |
+    type env
+    env | sort
